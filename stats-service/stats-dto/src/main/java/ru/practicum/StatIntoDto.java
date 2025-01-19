@@ -20,15 +20,12 @@ import java.time.LocalDateTime;
 public class StatIntoDto {
 
     @NotBlank(groups = {Marker.OnCreate.class})
-    @Size(max = 255)
     String app;
 
     @NotBlank(groups = {Marker.OnCreate.class})
-    @Size(max = 255)
     String uri;
 
     @NotBlank(groups = {Marker.OnCreate.class})
-    @Size(max = 255)
     String ip;
 
     @NotNull(groups = {Marker.OnCreate.class})

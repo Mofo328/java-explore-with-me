@@ -16,9 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.practicum.StatDto;
 import ru.practicum.StatIntoDto;
 import ru.practicum.StatOutDto;
-import ru.practicum.service.StatServiceImpl;
+import ru.practicum.service.StatService;
 import ru.practicum.group.Marker;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -29,7 +28,7 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class StatController {
 
-    StatServiceImpl statService;
+    StatService statService;
 
     static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
